@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "imagem": "img/chocolate_cupcake.webp",
+        "nome": "Cupcake de Chocolate",
+        "principal_caracteristica": "Delicioso",
+        "rating": 4.8,
+        "likes": "95%",
+        "reviews": 50,
+        "descricao": "Um delicioso cupcake de chocolate com cobertura cremosa de chocolate.",
+        "detalhes": [
+            {
+                "caracteristica": "Sabor",
+                "detalhes": "Intenso sabor de chocolate com toque suave de baunilha."
+            },
+            {
+                "caracteristica": "Ingredientes",
+                "detalhes": "Feito com chocolate belga, cacau orgânico e farinha de trigo de alta qualidade."
+            },
+            {
+                "caracteristica": "Alergênicos",
+                "detalhes": "Contém glúten, leite e ovos."
+            }
+        ],
+        "preco": 6.00,
+        "preco_promocional": 5.00
+    },
+    {
+        "id": 2,
+        "imagem": "img/cafe-com-chantilly.webp",
+        "nome": "Cupcake de Chantily",
+        "principal_caracteristica": "Leve",
+        "rating": 4.8,
+        "likes": "93%",
+        "reviews": 45,
+        "descricao": "Um cupcake suave e leve com sabor de chantilly e um toque de café.",
+        "detalhes": [
+            {
+                "caracteristica": "Sabor",
+                "detalhes": "Sabor delicado de chantilly com um leve aroma de café."
+            },
+            {
+                "caracteristica": "Ingredientes",
+                "detalhes": "Feito com chantilly fresco, extrato de baunilha e café premium."
+            },
+            {
+                "caracteristica": "Alergênicos",
+                "detalhes": "Contém glúten, leite e ovos."
+            }
+        ],
+        "preco": 6.00,
+        "preco_promocional": 5.00
+    },
+    {
+        "id": 3,
+        "imagem": "img/cupcake-leite-ninho.jpg",
+        "nome": "Cupcake de Leite Ninho",
+        "principal_caracteristica": "Cremoso",
+        "rating": 4.8,
+        "likes": "96%",
+        "reviews": 60,
+        "descricao": "Um cupcake cremoso com sabor de leite ninho e uma cobertura suave.",
+        "detalhes": [
+            {
+                "caracteristica": "Sabor",
+                "detalhes": "Sabor rico e cremoso de leite ninho com um toque de doçura."
+            },
+            {
+                "caracteristica": "Ingredientes",
+                "detalhes": "Feito com leite ninho, creme de leite fresco e açúcar refinado."
+            },
+            {
+                "caracteristica": "Alergênicos",
+                "detalhes": "Contém glúten, leite e ovos."
+            }
+        ],
+        "preco": 6.00,
+        "preco_promocional": 5.00
+    },
+    {
+        "id": 4,
+        "imagem": "img/cupcake-morango.webp",
+        "nome": "Cupcake de Morango",
+        "principal_caracteristica": "Frutado",
+        "rating": 4.8,
+        "likes": "94%",
+        "reviews": 55,
+        "descricao": "Um cupcake refrescante com sabor de morango e cobertura de creme.",
+        "detalhes": [
+            {
+                "caracteristica": "Sabor",
+                "detalhes": "Sabor natural de morango com um toque de creme doce."
+            },
+            {
+                "caracteristica": "Ingredientes",
+                "detalhes": "Feito com morangos frescos, creme de leite e açúcar."
+            },
+            {
+                "caracteristica": "Alergênicos",
+                "detalhes": "Contém glúten, leite e ovos."
+            }
+        ],
+        "preco": 6.00,
+        "preco_promocional": 5.00
+    }
+]

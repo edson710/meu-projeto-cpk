@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Ícones Material Design -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <!-- Remix icon -->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+    <!-- CSS PERSONALIZADO PARA MENU -->
+    <link rel="stylesheet" href="css/personalizado.css" />
+    <link rel="stylesheet" href="css/detalhes.css" />
+    <link rel="stylesheet" href="css/carrinho.css" />
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Loja de Cupcakes</title>
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR -->
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active" title="Home">
+                        <i class="ri-home-5-line"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/link2/" class="tab-link link" title="Busca">
+                        <i class="ri-search-2-line"></i>
+                        <span>Busca</span>
+                    </a>
+                    <a href="/link3/" class="tab-link link" title="Favoritos">
+                        <i class="ri-heart-3-line"></i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="/link4/" class="tab-link link" title="Usuários">
+                        <i class="mdi mdi-account"></i>
+                        <span>Usuário</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!-- NAV TOPO -->
+                <div class="top-nav">
+                    <h1 class="title-logo">Loja de Cupcakes</h1>
+                    <a href="/carrinho/" class="btn-cart" data-count="0" title="Carrinho">
+                        <i class="ri-shopping-cart-2-line"></i>
+                    </a>
+                </div>
+
+                <form>
+                    <input id="search" placeholder="O que você procura?" type="text">
+                    <i class="icone-busca ri-search-2-line" title="Buscar"></i>
+                </form>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block no-margin-top">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="img-fluid" src="img/promocao-1.webp" alt="Promoção 1"></div>
+                                <div class="swiper-slide"><img class="img-fluid" src="img/promocao.avif.png" alt="Promoção 2"></div>
+                                <div class="swiper-slide"><img class="img-fluid" src="img/promocao-3.jpg" alt="Promoção 3"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="display-flex align-items-center justify-content-space-between">
+                            <h2>Categorias</h2>
+                            <a href="#" title="Veja todas as categorias">Veja todas <i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Swiper -->
+                        <div class="swiper categorias">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><button class="filter-btn active">Morango</button></div>
+                                <div class="swiper-slide"><button class="filter-btn active">Chocolate</button></div>
+                                <div class="swiper-slide"><button class="filter-btn active">Ninho</button></div>
+                                <div class="swiper-slide"><button class="filter-btn active">Chantily</button></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div id="produtos" class="margin-top display-flex align-items-center justify-content-start">
+                            
+                            <!--ITEM SKELETON-->
+                            <div class="item-card">
+                                <a href="/detalhes/" class="item" title="Detalhes do produto">
+                                    <div class="img-container skeleton-effect-wave"></div>
+                                    <div class="nome-rating">
+                                        <span class="gelo skeleton-effect-wave skeleton-block color-gray gelo-90"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-20"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-30"></span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-60"></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!--ITEM SKELETON-->
+                            <div class="item-card">
+                                <a href="/detalhes/" class="item" title="Detalhes do produto">
+                                    <div class="img-container skeleton-effect-wave"></div>
+                                    <div class="nome-rating">
+                                        <span class="gelo skeleton-effect-wave skeleton-block color-gray gelo-90"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-20"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-30"></span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-60"></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!--ITEM SKELETON-->
+                            <div class="item-card">
+                                <a href="/detalhes/" class="item" title="Detalhes do produto">
+                                    <div class="img-container skeleton-effect-wave"></div>
+                                    <div class="nome-rating">
+                                        <span class="gelo skeleton-effect-wave skeleton-block color-gray gelo-90"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-20"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-30"></span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-60"></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!--ITEM SKELETON-->
+                            <div class="item-card">
+                                <a href="/detalhes/" class="item" title="Detalhes do produto">
+                                    <div class="img-container skeleton-effect-wave"></div>
+                                    <div class="nome-rating">
+                                        <span class="gelo skeleton-effect-wave skeleton-block color-gray gelo-90"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-20"></span>
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-30"></span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="gelo skeleton-effect-wave skeleton-block gelo-60"></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS -->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app -->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <!-- Cordova -->
+    <script src="cordova.js"></script>
+</body>
+
+</html>

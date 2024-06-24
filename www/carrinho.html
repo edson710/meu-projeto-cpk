@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loja de Cupcakes</title>
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css"/>
+    <link rel="stylesheet" href="css/personalizado.css" />
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+            <div data-name="carrinho" class="page color-theme-blue">
+                <div class="nav-top cart">
+                    <a href="/index/" title="Voltar para o início"><i class="ri-arrow-left-s-line"></i></a>
+                    <strong><i class="ri-shopping-cart-2-line"></i>Carrinho</strong>
+                    <a href="#" class="link popover-open" data-popover=".popover-menu" title="Mais opções"><i class="ri-more-fill"></i></a>
+
+                </div>
+
+                <div class="popover popover-menu">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a id="esvaziar" href="/dialog/" class="list-button popover-close">
+                                        <i class="mdi mdi-broom"></i>
+                                        Esvaziar Carrinho
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content">
+                    <div id="listaCarrinho">
+                        <!-- Conteúdo do carrinho -->
+                        <div class="item-carrinho">
+                            <!-- Conteúdo do item do carrinho -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolbar toolbar-bottom">
+                    <div id="toolbarTotais" class="toolbar-inner display-flex align-items-center justify-content-center">
+                        <div class="flex-100">
+                            <div class="display-flex flex-column align-items-center justify-content-center">
+                                <div class="bd-bottom w80 display-flex justify-content-space-between">
+                                    <span>Subtotal: </span>
+                                    <span>R$ 5,00</span>
+                                </div>
+                                <div class="w80 display-flex justify-content-space-between">
+                                    <span>Frete</span>
+                                    <span>R$ 2,00</span>
+                                </div>
+                            </div>
+                        </div >
+                        <div id="toolbarCheckout">
+                            <button class="add-cart">comprar</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
